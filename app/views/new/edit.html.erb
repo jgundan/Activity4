@@ -1,0 +1,46 @@
+<%= form_for(@student, :url => {:action => "update"}) do |f| %>
+	<div>
+
+	<%= f.hidden_field @student.id
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	</div>
+
+	<div>
+	<%= f.label :course %>
+	<%= f.text_field :course %>
+	</div>
+	
+	<div>
+	<%= f.label :id_num %>
+	<%= f.text_field :id_num %>
+	</div>
+	
+	<div>
+	<%= f.label "prelim_exam" %>
+	<%= f.text_field :prelim_exam %>
+	</div>
+	
+	<div>
+	<%= f. label "midterm_exam" %>
+	<%= f.text_field :midterm_exam %>
+	</div>
+
+
+	<div>
+	<%= f. label "prefinal_exam" %>
+	<%= f.text_field :prefinal_exam %>
+	</div>
+
+
+	<div>
+	<%= f. label "final_exam" %>
+	<%= f.text_field :final_exam %>
+	</div>
+
+
+
+	<div>
+	<%= f.submit "Submit"%>
+	</div>
+ <% end %>

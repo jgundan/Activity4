@@ -1,0 +1,41 @@
+<%= form_for(@ad) do |f| %>
+	<div>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	</div>
+
+	<div>
+	<%= f.label :course %>
+	<%= f.text_field :course %>
+	</div>
+	
+	<div>
+	<%= f.label :id_num %>
+	<%= f.text_field :id_num %>
+	</div>
+	
+	<div>
+	<%= f.label "Prelim_exam" %>
+	<%= f.text_field :prelim_exam %>
+	</div>
+	
+	<div>
+	<%= f. label "Midterm_exam" %>
+	<%= f.text_field :midterm_exam %>
+	</div>
+
+	<div>
+	<%= f.label "Prefinal_exam" %>
+	<%= f.text_field :prefinal_exam %>
+	</div>
+
+	<div>
+	<%= f.label "Final_exam" %>
+	<%= f.text_field :final_exam %>
+	</div>
+
+
+	<div>
+	<%= f.submit "Submit"%>
+	</div>
+ <% end %>

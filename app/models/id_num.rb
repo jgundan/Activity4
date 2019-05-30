@@ -1,0 +1,2 @@
+class IdNum < ApplicationRecord
+end

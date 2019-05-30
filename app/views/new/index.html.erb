@@ -1,0 +1,33 @@
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Course</th>
+		<th>Id_num</th>	
+		<th>Prelim_exam</th>
+		<th>Midterm_exam</th>
+		<th>Prefinal_exam</th>
+		<th>Final_exam</th>
+
+	</tr>
+
+ <% @ads.each do |ad| %>
+<tr>
+	<td><%= ad.name %></td>
+	<td><%= ad.course %></td>
+	<td><%= ad.id_num %></td>
+	<td><%= ad.prelim_exam %></td>
+	<td><%= ad.midterm_exam %></td>
+	<td><%= ad.prefinal_exam %></td>
+	<td><%= ad.final_exam %></td>
+	<td>
+	<a>
+		<a href="delete/<%= ad.id %>">
+			SUBMIT		
+
+		</a>
+	</td> 
+</tr>
+
+<% end %>
+
+< /table>
